@@ -37,6 +37,8 @@
             colors: {
               clifford: "#da373d",
               "color-primary": "#FF4240",
+              "color-blackish": "#131318",
+              "color-texts": "rgba(255, 255, 255, 0.60)"
             },
           },
         },
@@ -44,15 +46,21 @@
     </script>
   </head>
   <body class="font-manrope">
-    <header class="container mx-auto">
+    <header
+      class="container px-5 mx-auto md:container md: lg:container lg:mx-auto"
+    >
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div
+                tabindex="0"
+                role="button"
+                class="-ml-5 btn btn-ghost lg:hidden"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -76,12 +84,12 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="bg-ghost text-3xl font-extrabold"
+            <a class="text-3xl font-extrabold bg-ghost"
               >Hockey<span class="text-color-primary">'</span>s</a
             >
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-base">
+          <div class="hidden navbar-center lg:flex">
+            <ul class="px-1 text-base menu menu-horizontal">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
@@ -89,14 +97,59 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="navbar-end flex gap-6">
+          <div class="flex gap-6 navbar-end">
             <div class="">
               <i class="fa-solid fa-magnifying-glass text-neutral-500"></i>
             </div>
-            <a class="btn bg-color-primary text-white text-xl">Get Ticket</a>
+            <a class="text-xl text-white btn bg-color-primary">Get Ticket</a>
           </div>
         </div>
       </nav>
+      <div class="banner-section space-y-14">
+        <!-- <img src="Images/1.png" alt="" class="container mx-auto" /> -->
+        <div class="w-full carousel">
+          <div id="slide1" class="relative w-full carousel-item ">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute bottom-0 flex justify-center gap-4 p-4 transform -translate-x-1/2 left-1/2 sm:bottom-0 sm:left-0 sm:transform-none lg:bottom-0 lg:left-0 lg:transform-none sm:p-5 lg:p-9"
+            >
+              <a href="#slide4" class="btn btn-circle btn-neutral">❮</a>
+              <a href="#slide2" class="btn btn-circle btn-neutral">❯</a>
+            </div>
+            <div class="absolute bottom-0 p-4 translate-x-1/2 translate-y-48 right-1/2 rounded-2xl bg-color-blackish lg:transform-none lg:m-8 lg:right-0 lg:p-7">
+              <h2 class="text-lg font-extrabold text-white lg:text-2xl">Meet all the heroes from the field</h2>
+              <p class="text-sm text-color-texts lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+          </div>
+          <!-- <div id="slide2" class="relative w-full carousel-item">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute bottom-0 flex justify-center gap-4 p-4 transform -translate-x-1/2 left-1/2 sm:bottom-0 sm:left-0 sm:transform-none lg:bottom-0 lg:left-0 lg:transform-none sm:p-5 lg:p-9"
+            >
+              <a href="#slide1" class="btn btn-circle btn-neutral">❮</a>
+              <a href="#slide3" class="btn btn-circle btn-neutral">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="relative w-full carousel-item">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute bottom-0 flex justify-center gap-4 p-4 transform -translate-x-1/2 left-1/2 sm:bottom-0 sm:left-0 sm:transform-none lg:bottom-0 lg:left-0 lg:transform-none sm:p-5 lg:p-9"
+            >
+              <a href="#slide2" class="btn btn-circle btn-neutral">❮</a>
+              <a href="#slide4" class="btn btn-circle btn-neutral">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="relative w-full carousel-item">
+            <img src="Images/1.png" class="w-full" />
+            <div
+              class="absolute bottom-0 flex justify-center gap-4 p-4 transform -translate-x-1/2 left-1/2 sm:bottom-0 sm:left-0 sm:transform-none lg:bottom-0 lg:left-0 lg:transform-none sm:p-5 lg:p-9"
+            >
+              <a href="#slide3" class="btn btn-circle btn-neutral">❮</a>
+              <a href="#slide1" class="btn btn-circle btn-neutral">❯</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
     </header>
     <main class="container mx-auto"></main>
     <footer></footer>
