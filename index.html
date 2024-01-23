@@ -38,7 +38,9 @@
               clifford: "#da373d",
               "color-primary": "#FF4240",
               "color-blackish": "#131318",
-              "color-texts": "rgba(255, 255, 255, 0.60)"
+              "color-texts": "rgba(255, 255, 255, 0.60)",
+              "color-texts-2": "rgba(19, 19, 24, 0.60)",
+              "color-texts-3": "rgba(19, 19, 24, 0.50)"
             },
           },
         },
@@ -49,7 +51,7 @@
     <header
       class="container px-5 mx-auto md:container md: lg:container lg:mx-auto"
     >
-      <nav>
+      <nav class="mb-10">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -127,7 +129,74 @@
           <p class="text-sm text-color-texts">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
       </div>
     </header>
-    <main class="container mx-auto"></main>
+    <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
+    <main class="container mx-auto">
+      <section class="">
+        <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Professional Hockeys Club</h1>
+        <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+        <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
+      </section>
+      <!-- progress bar section -->
+      <section class="flex flex-wrap items-center justify-center gap-4 lg:gap-24 ">
+        <div class="text-2xl radial-progress text-error" style="--value:87; --size:7rem; --thickness: 10px;" role="progressbar">87%</div>
+        <div class="text-2xl radial-progress text-success" style="--value:95; --size:7rem; --thickness: 10px;" role="progressbar">95%</div>
+        <div class="text-2xl radial-progress text-warning" style="--value:90; --size:7rem; --thickness: 10px;" role="progressbar">90%</div>
+        <div class="text-2xl radial-progress text-info" style="--value:80; --size:7rem; --thickness: 10px;" role="progressbar">80%</div>
+      </section>
+      <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
+      <!-- Program section -->
+      <section class="">
+        <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Program Sections</h1>
+        <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+        <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
+      </section>
+      <!-- card section -->
+      <section class="grid grid-cols-1 gap-5 p-5 lg:grid-cols-2">
+        <!-- first-card -->
+        <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/2.png);">
+        <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
+          <div class="text-start hero-content text-neutral-content rounded-2xl">
+            <div class="ml-6">
+              <h1 class="mb-5 text-3xl font-bold">Junior Program</h1>
+              <p class="mb-5 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
+          </div>
+          </div>
+        </div>
+        <!-- second-card -->
+        <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/3.png);">
+        <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
+          <div class="text-start hero-content text-neutral-content rounded-2xl">
+            <div class="ml-6">
+              <h1 class="mb-5 text-3xl font-bold">Teenager Program</h1>
+              <p class="mb-5 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
+          </div>
+          </div>
+        </div>
+        <!-- third-card -->
+        <div class="w-full col-span-1 lg:col-span-2 hero rounded-2xl" style="background-image: url(Images/4.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
+          <div class="text-start hero-content text-neutral-content rounded-2xl">
+            <div class="pr-32">
+              <h1 class="mb-5 text-3xl font-bold text-start">Professional Program</h1>
+              <p class="mb-5 text-base">Provident cupiditate voluptatem et in. <br>Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
+      <!-- product section -->
+      <section class="">
+        <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Our New Products</h1>
+        <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+        <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
+      </section>
+      <section class="product-section-contianer">
+
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
