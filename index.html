@@ -1,97 +1,58 @@
 <!DOCTYPE html>
 <html data-theme="light" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hockey's</title>
-    <!-- Tainlwind and DaisyUI CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- font awesome script -->
-    <script
-      src="https://kit.fontawesome.com/c0455f3649.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- custom fonts and colors -->
-    <style>
-      .font-manrope {
-        font-family: "Manrope", sans-serif;
-      }
-    </style>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "color-primary": "#FF4240",
-              "color-blackish": "#131318",
-              "color-texts": "rgba(255, 255, 255, 0.60)",
-              "color-texts-2": "rgba(19, 19, 24, 0.60)",
-              "color-texts-3": "rgba(19, 19, 24, 0.50)"
-            },
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hockey's</title>
+  <!-- Tainlwind and DaisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- font awesome script -->
+  <script src="https://kit.fontawesome.com/c0455f3649.js" crossorigin="anonymous"></script>
+  <!-- custom fonts and colors -->
+  <style>
+    .font-manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+            "color-primary": "#FF4240",
+            "color-blackish": "#131318",
+            "color-texts": "rgba(255, 255, 255, 0.60)",
+            "color-texts-2": "rgba(19, 19, 24, 0.60)",
+            "color-texts-3": "rgba(19, 19, 24, 0.50)"
           },
         },
-      };
-    </script>
-  </head>
-  <body class="font-manrope">
-    <header
-      class="container px-5 mx-auto md:container md: lg:container lg:mx-auto"
-    >
-      <nav class="mb-10">
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div
-                tabindex="0"
-                role="button"
-                class="-ml-5 btn btn-ghost lg:hidden"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
+      },
+    };
+  </script>
+</head>
+
+<body class="font-manrope">
+  <header class="container px-5 mx-auto md:container md: lg:container lg:mx-auto">
+    <nav class="mb-10">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="-ml-5 btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
             </div>
-            <a class="text-3xl font-extrabold bg-ghost"
-              >Hockey<span class="text-color-primary">'</span>s</a
-            >
-          </div>
-          <div class="hidden navbar-center lg:flex">
-            <ul class="px-1 text-base menu menu-horizontal">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li><a>Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
@@ -99,104 +60,243 @@
               <li><a>Contact</a></li>
             </ul>
           </div>
-          <div class="flex gap-6 navbar-end">
-            <div class="">
-              <i class="fa-solid fa-magnifying-glass text-neutral-500"></i>
-            </div>
-            <a class="text-xl text-white btn bg-color-primary">Get Ticket</a>
+          <a class="text-3xl font-extrabold bg-ghost">Hockey<span class="text-color-primary">'</span>s</a>
+        </div>
+        <div class="hidden navbar-center lg:flex">
+          <ul class="px-1 text-base menu menu-horizontal">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-6 navbar-end">
+          <div class="">
+            <i class="fa-solid fa-magnifying-glass text-neutral-500"></i>
+          </div>
+          <a class="text-xl text-white btn bg-color-primary">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+    <div class="space-y-4 banner-section">
+      <!-- <img src="Images/1.png" alt="" class="container mx-auto" /> -->
+      <div class="w-full carousel">
+        <div id="slide1" class="relative w-full carousel-item ">
+          <img src="Images/1.png" class="w-full" />
+          <div
+            class="absolute bottom-0 flex justify-center gap-4 p-4 transform -translate-x-1/2 left-1/2 sm:bottom-0 sm:left-0 sm:transform-none lg:bottom-0 lg:left-0 lg:transform-none sm:p-5 lg:p-9">
+            <a href="#slide4" class="btn btn-circle btn-neutral">❮</a>
+            <a href="#slide2" class="btn btn-circle btn-neutral">❯</a>
+          </div>
+          <div
+            class="hidden md:block lg:block lg:absolute lg:rounded-2xl bg-color-blackish lg:transform-none lg:m-8 lg:bottom-0 lg:right-0 lg:p-7">
+            <h2 class="text-lg font-extrabold text-white lg:text-2xl">Meet all the heroes from the field</h2>
+            <p class="text-sm text-color-texts lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing
+              aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
           </div>
         </div>
-      </nav>
-      <div class="space-y-4 banner-section">
-        <!-- <img src="Images/1.png" alt="" class="container mx-auto" /> -->
-        <div class="w-full carousel">
-          <div id="slide1" class="relative w-full carousel-item ">
-            <img src="Images/1.png" class="w-full" />
-            <div
-              class="absolute bottom-0 flex justify-center gap-4 p-4 transform -translate-x-1/2 left-1/2 sm:bottom-0 sm:left-0 sm:transform-none lg:bottom-0 lg:left-0 lg:transform-none sm:p-5 lg:p-9"
-            >
-              <a href="#slide4" class="btn btn-circle btn-neutral">❮</a>
-              <a href="#slide2" class="btn btn-circle btn-neutral">❯</a>
-            </div>
-            <div class="hidden md:block lg:block lg:absolute lg:rounded-2xl bg-color-blackish lg:transform-none lg:m-8 lg:bottom-0 lg:right-0 lg:p-7">
-              <h2 class="text-lg font-extrabold text-white lg:text-2xl">Meet all the heroes from the field</h2>
-              <p class="text-sm text-color-texts lg:text-base">Dit amet consectetur. Condimentum dignissim adipiscing aliquam <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
-            </div>
-          </div>
       </div>
       <div class="p-4 space-y-2 bg-color-blackish rounded-2xl lg:hidden">
-          <h2 class="text-lg font-extrabold text-white">Meet all the heroes from the field</h2>
-          <p class="text-sm text-color-texts">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <h2 class="text-lg font-extrabold text-white">Meet all the heroes from the field</h2>
+        <p class="text-sm text-color-texts">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+          placerat dolor. Purus urna in sit nullam proin. </p>
       </div>
-    </header>
-    <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
-    <main class="container mx-auto">
-      <section class="">
-        <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Professional Hockeys Club</h1>
-        <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
-        <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
-      </section>
-      <!-- progress bar section -->
-      <section class="flex flex-wrap items-center justify-center gap-4 lg:gap-24 ">
-        <div class="text-2xl radial-progress text-error" style="--value:87; --size:7rem; --thickness: 10px;" role="progressbar">87%</div>
-        <div class="text-2xl radial-progress text-success" style="--value:95; --size:7rem; --thickness: 10px;" role="progressbar">95%</div>
-        <div class="text-2xl radial-progress text-warning" style="--value:90; --size:7rem; --thickness: 10px;" role="progressbar">90%</div>
-        <div class="text-2xl radial-progress text-info" style="--value:80; --size:7rem; --thickness: 10px;" role="progressbar">80%</div>
-      </section>
-      <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
-      <!-- Program section -->
-      <section class="">
-        <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Program Sections</h1>
-        <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
-        <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
-      </section>
-      <!-- card section -->
-      <section class="grid grid-cols-1 gap-5 p-5 lg:grid-cols-2">
-        <!-- first-card -->
-        <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/2.png);">
+  </header>
+  <div
+    class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
+  </div>
+  <main class="container mx-auto">
+    <section class="">
+      <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Professional Hockeys Club</h1>
+      <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      <div
+        class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
+      </div>
+    </section>
+    <!-- progress bar section -->
+    <section class="flex flex-wrap items-center justify-center gap-4 lg:gap-24 ">
+      <div class="text-2xl radial-progress text-error" style="--value:87; --size:7rem; --thickness: 10px;"
+        role="progressbar">87%</div>
+      <div class="text-2xl radial-progress text-success" style="--value:95; --size:7rem; --thickness: 10px;"
+        role="progressbar">95%</div>
+      <div class="text-2xl radial-progress text-warning" style="--value:90; --size:7rem; --thickness: 10px;"
+        role="progressbar">90%</div>
+      <div class="text-2xl radial-progress text-info" style="--value:80; --size:7rem; --thickness: 10px;"
+        role="progressbar">80%</div>
+    </section>
+    <div
+      class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
+    </div>
+    <!-- Program section -->
+    <section class="">
+      <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Program Sections</h1>
+      <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      <div
+        class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
+      </div>
+    </section>
+    <!-- card section -->
+    <section class="grid grid-cols-1 gap-10 p-5 lg:grid-cols-2">
+      <!-- first-card -->
+      <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/2.png);">
         <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
-          <div class="text-start hero-content text-neutral-content rounded-2xl">
-            <div class="ml-6">
-              <h1 class="mb-5 text-3xl font-bold">Junior Program</h1>
-              <p class="mb-5 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
-          </div>
+        <div class="text-start hero-content text-neutral-content rounded-2xl">
+          <div class="ml-6">
+            <h1 class="mb-5 text-3xl font-bold">Junior Program</h1>
+            <p class="mb-5 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+              exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
           </div>
         </div>
-        <!-- second-card -->
-        <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/3.png);">
+      </div>
+      <!-- second-card -->
+      <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/3.png);">
         <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
-          <div class="text-start hero-content text-neutral-content rounded-2xl">
-            <div class="ml-6">
-              <h1 class="mb-5 text-3xl font-bold">Teenager Program</h1>
-              <p class="mb-5 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
-          </div>
+        <div class="text-start hero-content text-neutral-content rounded-2xl">
+          <div class="ml-6">
+            <h1 class="mb-5 text-3xl font-bold">Teenager Program</h1>
+            <p class="mb-5 text-base">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+              exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
           </div>
         </div>
-        <!-- third-card -->
-        <div class="w-full col-span-1 lg:col-span-2 hero rounded-2xl" style="background-image: url(Images/4.png); background-repeat: no-repeat; background-size: cover;">
+      </div>
+      <!-- third-card -->
+      <div class="w-full col-span-1 lg:col-span-2 hero rounded-2xl"
+        style="background-image: url(Images/4.png); background-repeat: no-repeat; background-size: cover;">
         <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
-          <div class="text-start hero-content text-neutral-content rounded-2xl">
-            <div class="pr-32">
-              <h1 class="mb-5 text-3xl font-bold text-start">Professional Program</h1>
-              <p class="mb-5 text-base">Provident cupiditate voluptatem et in. <br>Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
-            </div>
+        <div class="text-start hero-content text-neutral-content rounded-2xl">
+          <div class="pr-32">
+            <h1 class="mb-5 text-3xl font-bold text-start">Professional Program</h1>
+            <p class="mb-5 text-base">Provident cupiditate voluptatem et in. <br>Quaerat fugiat ut assumenda excepturi
+              exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+            <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
           </div>
         </div>
-      </section>
-      <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
-      <!-- product section -->
-      <section class="">
-        <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Our New Products</h1>
-        <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
-        <div class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto"></div>
-      </section>
-      <section class="product-section-contianer">
+      </div>
+    </section>
+    <div
+      class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
+    </div>
+    <!-- product section -->
+    <section class="">
+      <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Our New Products</h1>
+      <p class="text-base font-medium text-center text-color-texts-2">Dit amet consectetur. Condimentum dignissim
+        adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+      <div
+        class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
+      </div>
+    </section>
+    <!-- product section container -->
+    <section class="grid grid-cols-1 gap-6 m-5 lg:m-0 lg:grid-cols-2">
+      <!-- first-card -->
+      <div class="shadow-xl border border-solid border-gray-200 card lg:card-side bg-base-100 lg:p-4 col-span-1">
+        <figure class="flex-1"><img src="Images/5.png" alt="Album" /></figure>
+        <div class="card-body flex-1">
+          <div class="rating-title space-x-4 text-color-texts-2">
+            <p class="inline-block"><i class="fa-solid fa-star text-yellow-500"></i>  5.0</p>
+            <p class="inline-block"><i class="fa-regular fa-eye"></i> 20</p>
+            <p class="inline-block"><i class="fa-regular fa-heart"></i> 200</p>
+          </div>
+          <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+          <p class="text-color-texts-2 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <div class="justify-start card-actions gap-4 text-color-texts-2">
+            <h3 class="text-color-primary font-extrabold">Price - $22.00</h3>
+            <p><i class="fa-solid fa-cart-shopping mr-2 text-neutral-500"></i>Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+      <!-- second-card -->
+      <div class="shadow-xl border border-solid border-gray-200 card lg:card-side bg-base-100 p-4 col-span-1">
+        <figure class="flex-1"><img src="Images/6.png" alt="Album" /></figure>
+        <div class="card-body flex-1">
+          <div class="rating-title space-x-4 text-color-texts-2">
+            <p class="inline-block"><i class="fa-solid fa-star text-yellow-500"></i>  5.0</p>
+            <p class="inline-block"><i class="fa-regular fa-eye"></i> 20</p>
+            <p class="inline-block"><i class="fa-regular fa-heart"></i> 200</p>
+          </div>
+          <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+          <p class="text-color-texts-2 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <div class="justify-start card-actions gap-4 text-color-texts-2">
+            <h3 class="text-color-primary font-extrabold">Price - $22.00</h3>
+            <p><i class="fa-solid fa-cart-shopping mr-2 text-neutral-500"></i>Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+      <!-- third-card -->
+      <div class="shadow-xl border border-solid border-gray-200 card lg:card-side bg-base-100 p-4 col-span-1">
+        <figure class="flex-1"><img src="Images/7.png" alt="Album" /></figure>
+        <div class="card-body flex-1">
+          <div class="rating-title space-x-4 text-color-texts-2">
+            <p class="inline-block"><i class="fa-solid fa-star text-yellow-500"></i>  5.0</p>
+            <p class="inline-block"><i class="fa-regular fa-eye"></i> 20</p>
+            <p class="inline-block"><i class="fa-regular fa-heart"></i> 200</p>
+          </div>
+          <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+          <p class="text-color-texts-2 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <div class="justify-start card-actions gap-4 text-color-texts-2">
+            <h3 class="text-color-primary font-extrabold">Price - $22.00</h3>
+            <p><i class="fa-solid fa-cart-shopping mr-2 text-neutral-500"></i>Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+      <!-- fourth-card -->
+      <div class="shadow-xl border border-solid border-gray-200 card lg:card-side bg-base-100 p-4 col-span-1">
+        <figure class="flex-1"><img src="Images/8.png" alt="Album" /></figure>
+        <div class="card-body flex-1">
+          <div class="rating-title space-x-4 text-color-texts-2">
+            <p class="inline-block"><i class="fa-solid fa-star text-yellow-500"></i>  5.0</p>
+            <p class="inline-block"><i class="fa-regular fa-eye"></i> 20</p>
+            <p class="inline-block"><i class="fa-regular fa-heart"></i> 200</p>
+          </div>
+          <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+          <p class="text-color-texts-2 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <div class="justify-start card-actions gap-4 text-color-texts-2">
+            <h3 class="text-color-primary font-extrabold">Price - $22.00</h3>
+            <p><i class="fa-solid fa-cart-shopping mr-2 text-neutral-500"></i>Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+      <!-- fifth-card -->
+      <div class="shadow-xl border border-solid border-gray-200 card lg:card-side bg-base-100 p-4 col-span-1">
+        <figure class="flex-1"><img src="Images/9.png" alt="Album" /></figure>
+        <div class="card-body flex-1">
+          <div class="rating-title space-x-4 text-color-texts-2">
+            <p class="inline-block"><i class="fa-solid fa-star text-yellow-500"></i>  5.0</p>
+            <p class="inline-block"><i class="fa-regular fa-eye"></i> 20</p>
+            <p class="inline-block"><i class="fa-regular fa-heart"></i> 200</p>
+          </div>
+          <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+          <p class="text-color-texts-2 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <div class="justify-start card-actions gap-4 text-color-texts-2">
+            <h3 class="text-color-primary font-extrabold">Price - $22.00</h3>
+            <p><i class="fa-solid fa-cart-shopping mr-2 text-neutral-500"></i>Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+      <!-- sixth-card -->
+      <div class="shadow-xl border border-solid border-gray-200 card lg:card-side bg-base-100 p-4 col-span-1">
+        <figure class="flex-1"><img src="Images/10.png" alt="Album" /></figure>
+        <div class="card-body flex-1">
+          <div class="rating-title space-x-4 text-color-texts-2">
+            <p class="inline-block"><i class="fa-solid fa-star text-yellow-500"></i>  5.0</p>
+            <p class="inline-block"><i class="fa-regular fa-eye"></i> 20</p>
+            <p class="inline-block"><i class="fa-regular fa-heart"></i> 200</p>
+          </div>
+          <h2 class="card-title text-xl font-extrabold">World Cup Flags Football</h2>
+          <p class="text-color-texts-2 text-base">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+          <div class="justify-start card-actions gap-4 text-color-texts-2">
+            <h3 class="text-color-primary font-extrabold">Price - $22.00</h3>
+            <p><i class="fa-solid fa-cart-shopping mr-2 text-neutral-500"></i>Delivery Fee : Free</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+</body>
 
-      </section>
-    </main>
-    <footer></footer>
-  </body>
 </html>
