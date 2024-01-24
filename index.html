@@ -143,12 +143,6 @@
         <p class="text-xl">Training Ground</p>
         <p class="text-sm w-40 text-center">Hockey Training Zone: Elevate Your Game Here!"</p>
       </div>
-      <!-- <div class="text-2xl radial-progress text-success" style="--value:95; --size:8rem; --thickness: 12px;"
-        role="progressbar">95%</div>
-      <div class="text-2xl radial-progress text-warning" style="--value:90; --size:8rem; --thickness: 12px;"
-        role="progressbar">90%</div>
-      <div class="text-2xl radial-progress text-info" style="--value:80; --size:8rem; --thickness: 12px;"
-        role="progressbar">80%</div> -->
     </section>
     <div
       class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
@@ -484,28 +478,42 @@
     <p class=" lg:w-[364px] text-color-texts text-base font-medium">Connect with us! Reach out for inquiries, collaborations, or just to chat. Your feedback matters. Let's make the hockey experience better together.</p>
     <p class="inline-block text-color-texts text-base font-medium"><i class="fa-regular fa-envelope text-color-primary mr-4"></i> hockeys@support.com</p>
     <p class="inline-block text-color-texts text-base font-medium"><i class="fa-solid fa-phone text-color-primary mr-4"></i> (+62) 123-321-543</p>
-  </aside> 
-    <nav>
-    <header class="footer-title text-lg font-bold text-white">Company</header> 
-    <a class="link link-hover text-color-texts">About us</a>
-    <a class="link link-hover text-color-texts">Contact</a>
-    <a class="link link-hover text-color-texts">Jobs</a>
-    <a class="link link-hover text-color-texts">Press kit</a>
-  </nav> 
-    <nav>
-    <header class="footer-title text-lg font-bold text-white">Support</header> 
-    <a class="link link-hover text-color-texts">Help Center</a>
-    <a class="link link-hover text-color-texts">FAQ</a>
-    <a class="link link-hover text-color-texts">Ticket Support</a>
-    <a class="link link-hover text-color-texts">Contact Us</a>
-  </nav>
-  <nav>
-    <header class="footer-title text-lg font-bold text-white">Services</header> 
-    <a class="link link-hover text-color-texts">Branding</a>
-    <a class="link link-hover text-color-texts">Design</a>
-    <a class="link link-hover text-color-texts">Marketing</a>
-    <a class="link link-hover text-color-texts">Advertisement</a>
-  </nav> 
+  </aside>
+  <!-- with flex -->
+  <div class="flex flex-col gap-20 flex-wrap lg:flex-row">
+    <!-- first and second colms -->
+    <div class="flex gap-20 w-80 justify-center">    
+      <nav class="flex-1">
+        <header class="footer-title text-lg font-bold text-white">Company</header> 
+        <div class="flex flex-col gap-2">
+          <a class="link link-hover text-color-texts">About us</a>
+          <a class="link link-hover text-color-texts">Contact</a>
+          <a class="link link-hover text-color-texts">Jobs</a>
+          <a class="link link-hover text-color-texts">Press kit</a>
+      </div>
+      </nav> 
+      <nav class="flex-1">
+      <header class="footer-title text-lg font-bold text-white">Support</header> 
+      <div class="flex flex-col gap-2">
+        <a class="link link-hover text-color-texts">Help Center</a>
+        <a class="link link-hover text-color-texts">FAQ</a>
+        <a class="link link-hover text-color-texts">Ticket Support</a>
+        <a class="link link-hover text-color-texts">Contact Us</a>
+      </div>
+    </nav>
+  </div>
+  <div class="flex w-80 justify-center pl-24 lg:pl-0">
+    <nav class="flex-1">
+      <header class="footer-title text-lg font-bold text-white">Services</header> 
+      <div class="flex flex-col gap-2">
+        <a class="link link-hover text-color-texts">Branding</a>
+        <a class="link link-hover text-color-texts">Design</a>
+        <a class="link link-hover text-color-texts">Marketing</a>
+        <a class="link link-hover text-color-texts">Advertisement</a>
+      </div>
+    </nav> 
+  </div>
+  </div> 
 </footer>
 </body>
 </html>
