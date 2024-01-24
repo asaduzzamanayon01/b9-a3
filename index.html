@@ -107,9 +107,9 @@
       </div>
   </header>
   <div
-    class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
+    class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container lg:container lg:mx-auto">
   </div>
-  <main class="container mx-auto">
+  <main class="container mx-auto p-2 lg:p-0">
     <section class="">
       <h1 class="mb-6 text-4xl font-extrabold text-center text-color-blackish">Professional Hockeys Club</h1>
       <p class="text-base font-medium text-center text-color-texts-2">Dive into the world of professional hockey with exclusive insights, scores, and player profiles. <br> Your go-to destination for everything pro hockey! </p>
@@ -118,15 +118,37 @@
       </div>
     </section>
     <!-- progress bar section -->
-    <section class="flex flex-wrap items-center justify-center gap-4 lg:gap-24 ">
-      <div class="text-2xl radial-progress text-error" style="--value:87; --size:8rem; --thickness: 12px;"
-        role="progressbar">87%</div>
-      <div class="text-2xl radial-progress text-success" style="--value:95; --size:8rem; --thickness: 12px;"
+    <section class="flex flex-wrap flex-col items-center justify-center gap-6 lg:flex-row lg:gap-24 ">
+      <div class="flex gap-2 flex-col justify-center items-center">
+        <div class="text-2xl radial-progress text-error" style="--value:87; --size:8rem; --thickness: 12px;"
+        role="progressbar">87% </div>
+        <p class="text-xl">prayer facility</p>
+        <p class="text-sm w-40 text-center"> A Quiet Haven for Reflection and Connection.</p>
+      </div>
+      <div class="flex gap-2 flex-col justify-center items-center">
+        <div class="text-2xl radial-progress text-success" style="--value:95; --size:8rem; --thickness: 12px;"
+        role="progressbar">95% </div>
+        <p class="text-xl">Experienced Coach</p>
+        <p class="text-sm w-40 text-center">Elevate your team with our experienced coaching resources.</p>
+      </div>
+      <div class="flex gap-2 flex-col justify-center items-center">
+        <div class="text-2xl radial-progress text-warning" style="--value:90; --size:8rem; --thickness: 12px;"
+        role="progressbar">90% </div>
+        <p class="text-xl">Senior Players</p>
+        <p class="text-sm w-40 text-center">Elite Legends: Honoring Senior Players' Legacy on and off the Ice!</p>
+      </div>
+      <div class="flex gap-2 flex-col justify-center items-center">
+        <div class="text-2xl radial-progress text-info" style="--value:80; --size:8rem; --thickness: 12px;"
+        role="progressbar">80% </div>
+        <p class="text-xl">Training Ground</p>
+        <p class="text-sm w-40 text-center">Hockey Training Zone: Elevate Your Game Here!"</p>
+      </div>
+      <!-- <div class="text-2xl radial-progress text-success" style="--value:95; --size:8rem; --thickness: 12px;"
         role="progressbar">95%</div>
       <div class="text-2xl radial-progress text-warning" style="--value:90; --size:8rem; --thickness: 12px;"
         role="progressbar">90%</div>
       <div class="text-2xl radial-progress text-info" style="--value:80; --size:8rem; --thickness: 12px;"
-        role="progressbar">80%</div>
+        role="progressbar">80%</div> -->
     </section>
     <div
       class="container px-5 mx-auto my-20 border border-dashed border-neutral-200 md:container md: lg:container lg:mx-auto">
@@ -142,35 +164,35 @@
     <!-- card section -->
     <section class="grid grid-cols-1 gap-10 p-5 lg:grid-cols-2">
       <!-- first-card -->
-      <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/2.png);">
+      <div class="col-span-1 hero rounded-2xl lg:h-80" style="background-image: url(Images/2.png);">
         <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
         <div class="text-start hero-content text-neutral-content rounded-2xl">
           <div class="ml-6">
-            <h1 class="mb-5 text-3xl font-bold">Junior Program</h1>
-            <p class="mb-5 text-base">Dive into our Junior Program section – where young talents skate towards greatness. Discover development pathways and exciting stories.</p>
+            <h1 class="mb-5 text-xl lg:text-3xl font-bold">Junior Program</h1>
+            <p class="mb-5 text-sm lg:text-base">Dive into our Junior Program section – where young talents skate towards greatness. Discover development pathways and exciting stories.</p>
             <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
           </div>
         </div>
       </div>
       <!-- second-card -->
-      <div class="col-span-1 hero rounded-2xl" style="background-image: url(Images/3.png);">
+      <div class="col-span-1 hero rounded-2xl lg:h-80" style="background-image: url(Images/3.png);">
         <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
         <div class="text-start hero-content text-neutral-content rounded-2xl">
           <div class="ml-6">
-            <h1 class="mb-5 text-3xl font-bold">Teenager Program</h1>
-            <p class="mb-5 text-base">Unlock potential in our Teenager Program Section – a space for growth, learning, and connection. Empowering teens for a brighter future.</p>
+            <h1 class="mb-5 text-xl lg:text-3xl font-bold">Teenager Program</h1>
+            <p class="mb-5 text-sm lg:text-base">Unlock potential in our Teenager Program Section – a space for growth, learning, and connection. Empowering teens for a brighter future.</p>
             <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
           </div>
         </div>
       </div>
       <!-- third-card -->
-      <div class="w-full col-span-1 lg:col-span-2 hero rounded-2xl"
+      <div class="w-full col-span-1 lg:col-span-2 hero rounded-2xl lg:h-96"
         style="background-image: url(Images/4.png); background-repeat: no-repeat; background-size: cover;">
         <div class="rounded-2xl hero-overlay bg-color-texts-3"></div>
         <div class="text-start hero-content text-neutral-content rounded-2xl">
           <div class="pr-32">
-            <h1 class="mb-5 text-3xl font-bold text-start">Professional Program</h1>
-            <p class="mb-5 text-base">Explore our elite Professional Program section — Elevate your skills, advance your career. Unleash your potential in the world of excellence!</p>
+            <h1 class="mb-5 text-xl lg:text-3xl font-bold text-start">Professional Program</h1>
+            <p class="mb-5 text-sm lg:text-base">Explore our elite Professional Program section — Elevate your skills, advance your career. Unleash your potential in the world of excellence!</p>
             <button class="text-xl text-white border-none btn bg-color-primary">Get Started</button>
           </div>
         </div>
